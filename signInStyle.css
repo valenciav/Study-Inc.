@@ -63,16 +63,17 @@ form span{
     font-size: 30px;
 }
 
-#welcome{
+h1{
     font-size: 25px;
+    font-weight:regular;
 }
 
-#signin{
+h2{
     font-size: 30px;
     font-weight: bold;
 }
 
-#studyinc{
+h3{
     font-size: 15px;
 }
 
