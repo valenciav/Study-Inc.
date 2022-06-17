@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signInStyle.css">
+    <script src="https://kit.fontawesome.com/d57f3da380.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script defer src = "script.js"></script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Study Inc.</title>
+</head>
+<body>
+    <div class = "header">
+        <logo><i class="fa-solid fa-book-open" id = "profile"></i>study Inc.</logo>
+    </div>
+    <div class = "picture">
+        <img src = "assets/studying2.jpg">
+    </div>
+    <form id = "signInForm" action="loggedIn.html">
+        <span id = "welcome">Welcome !</span>
+        <br>
+        <span id = "signin">Sign in to</span>
+        <span id = "studyinc">study inc.</span>
+        <br>
+        <div class = "form-content">
+            <label>User name</label>
+            <input type = "text" placeholder="Enter your user name" id = "username" required>
+            </div>
+        </div>
+        <div class = "form-content">
+            <label>Password</label>
+            <input type = "text" placeholder="Enter your Password" id = "password" required>
+            </div>
+        </div>
+        <small>Message</small>
+        <button class = "submit" type = "submit">Login</button>
+    </form>
+</body>

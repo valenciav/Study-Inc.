@@ -1,0 +1,131 @@
+*{
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    margin:0px;
+}
+
+.header{
+    background-color: #35455D;
+    width:100%;
+    height:60px;
+    position:sticky;
+    margin:0%;
+    padding:0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+
+i{
+    color: #FBF3E2;
+    font-size: 30px;
+    margin:5px 25px 5px 25px;
+}
+
+logo{
+    color: #FBF3E2;
+    font-family:'poppins', sans-serif;
+    font-size: 30px;
+}
+
+.picture{
+    display:flex;
+    justify-content: flex-end;
+    margin: 50px 0px 50px 0px;
+    position:absolute;
+    width:100%;
+    min-width: 800px;
+}
+
+img{
+    width:75%;
+}
+
+form{
+    background-color: white;
+    max-width:450px;
+    width: 60%;
+    margin-left: 1%;
+    margin-right: 70%;
+    border: solid 1px #00000045;
+    padding:30px;
+    border-radius: 5px;
+    position:absolute;
+    top:200px;
+    left: 100px;
+}
+
+form span{
+    display: flex;
+    font-size: 30px;
+}
+
+#welcome{
+    font-size: 25px;
+}
+
+#signin{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#studyinc{
+    font-size: 15px;
+}
+
+.form-content{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-top: auto;
+    margin-bottom: auto;
+    position:relative;
+    font-size: 16px;
+}
+
+input{
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 14px;
+}
+
+small{
+    visibility:collapse;
+}
+
+.submit{
+    margin-top: 60px;
+    padding:10px;
+    border-radius: 5px;
+    width:100%;
+    background-color: black;
+    color:white;
+}
+
+.submit:hover{
+    cursor: pointer;
+}
+
+input:focus::placeholder{
+    visibility: hidden;
+}
+
+@media (max-width: 1000px){
+    .picture{
+        justify-content: center;
+    }
+    .img{
+        width:100%;
+    }
+    .form{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
