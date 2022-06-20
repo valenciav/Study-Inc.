@@ -10,34 +10,38 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script defer src = "script.js"></script>
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Study Inc.</title>
 </head>
+
 <body>
     <div class = "header">
         <logo><i class="fa-solid fa-book-open" id = "profile"></i>study Inc.</logo>
     </div>
-    <div class = "picture">
-        <img src = "assets/studying2.jpg">
+    <div class = "content">
+        <div class = "picture">
+            <img src = "assets/studying2.jpg">
+        </div>
+        <form id = "signInForm" action="home.html">
+            <h1>Welcome !</h1>
+            <br>
+            <h2>Sign in to</h2>
+            <h3>study inc.</h3>
+            <br>
+            <h4>Don't have an account?</h4>
+            <h4><a href="register.html">Create Account</a></h4>
+            <br>
+            <div class = "form-content">
+                <label>Email</label>
+                <input type = "email" placeholder="Enter your email" id = "email" required>
+            </div>
+            <div class = "form-content">
+                <label>Password</label>
+                <input type = "text" placeholder="Enter your Password" id = "password" required>
+            </div>
+            <small>Message</small>
+            <button class = "submit" type = "submit">Login</button>
+        </form>
     </div>
-    <form id = "signInForm" action="home.html">
-        <h1>Welcome !</h1>
-        <br>
-        <h2>Sign in to</h2>
-        <h3>study inc.</h3>
-        <br>
-        <div class = "form-content">
-            <label>User name</label>
-            <input type = "text" placeholder="Enter your user name" id = "username" required>
-            </div>
-        </div>
-        <div class = "form-content">
-            <label>Password</label>
-            <input type = "text" placeholder="Enter your Password" id = "password" required>
-            </div>
-        </div>
-        <small>Message</small>
-        <button class = "submit" type = "submit">Login</button>
-    </form>
 </body>
