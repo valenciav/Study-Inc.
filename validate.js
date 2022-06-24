@@ -12,9 +12,6 @@ form.addEventListener('submit', e =>{
         e.preventDefault();
         alert("Please fill the information correctly.");
     }
-    else{
-        alert("Registration successful!");
-    }
 })
 
 function showmsg(target, msg){
@@ -32,7 +29,6 @@ function clearmsg(target){
 
 function validateFirstName(){
     const firstNameValue = firstName.value;
-    console.log(firstNameValue);
     if(firstNameValue == "" || firstNameValue == null){
         showmsg(firstName, "Name can not be empty.");
         return false;

@@ -1,5 +1,6 @@
 body{
     margin:0px;
+    font-family:'poppins', sans-serif;
 }
 
 .header{
@@ -23,7 +24,6 @@ i{
 
 logo{
     color: #FBF3E2;
-    font-family:'poppins', sans-serif;
     font-size: 30px;
 }
 
@@ -52,4 +52,44 @@ img{
     text-decoration: none;
     font-family: 'roboto', sans-serif;
     margin:1%;
+}
+
+.content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px;
+    margin-left: auto;
+    margin-right: auto;
+    width:60%;
+    border-radius: 5px;
+    border:2px solid rgba(0,0,0,0.5);
+}
+
+.faq{
+    background-color: #faf6f3;
+    width:100%;
+}
+
+
+
+.content h1{
+    text-align: center;
+    background-color: #35455D;
+    color:#FAF6F3;
+    width:100%;
+    font-size: 40px;
+    margin:0px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.question{
+    padding: 20px;
+}
+
+.answer{
+    background-color: white;
+    border-radius: 5px;
+    padding:10px;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.2) ;
 }

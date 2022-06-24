@@ -101,6 +101,12 @@ hr{
     border-top: 1px solid #BDBDBD;
 }
 
+.half{
+    width:25%;
+    margin:5%;
+    max-width: 100px;
+}
+
 input[type="date"]::-webkit-calendar-picker{
     background-color:red;
 }
@@ -124,5 +130,50 @@ input[type="date"]::-webkit-calendar-picker{
     height:250px;
     border:3px solid rgba(0,0,0,0.7);
     border-radius: 5px;
+}
 
+.dbcontent{
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.calendar{
+    width:50%;
+    display:flex;
+    justify-content: center;
+}
+
+.month{    
+    width:40%;
+    display:flex;
+    flex-direction: column;
+    margin:15px;
+}
+
+.week{
+    display:flex;
+    justify-content: space-around;
+}
+
+.weekday{
+    font-size: small;
+}
+
+.dbcontent .button{
+    background-color: #35455D;
+    border-radius: 30px;
+    padding:5px;
+}
+
+text{
+    color:rgba(0,0,0,0.5);
+}
+
+a{    
+    text-decoration: none;
+    color:#FBF3E2;
 }

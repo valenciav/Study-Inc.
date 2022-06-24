@@ -10,7 +10,7 @@ body{
     background-color: #35455D;
     width:100%;
     height:60px;
-    position:sticky;
+    position:relative;
     margin:0%;
     padding:0%;
     display: flex;
@@ -31,27 +31,227 @@ logo{
     font-size: 30px;
 }
 
-.option{
-    margin-left:70px;
+#searchbar{
+    display:flex;
+    align-items: center;
+    width:50%;
 }
 
-.option ul{
+.searchbar{
+    padding: 15px;
+    height:10px;
+    width:100%;
     border-radius: 5px;
-    border-style: groove;
-    width:200px;
-    padding:15px;
+    border:none;
+    background-color: #f6f4f0;
 }
 
-.option ul:hover{
-    cursor:pointer;
+.searchbar::placeholder{
+    color:#35455d83;
 }
 
-.option ul li{
-    list-style: none;
+.searchbar:focus::placeholder{
+    visibility: hidden;
+}
+
+button{
+    background:none;
+    border:none;
+    position:absolute;
+    visibility: hidden;
+}
+
+#courseFilter{
+    display:flex;
+    width:75%;
+    margin-left:40px;
+}
+
+.form-content{
+    margin-right: 40px;
+}
+
+select{
     padding:15px;
+    width:250px;
+    box-shadow:rgba(0,0,0, 0.1) 0px 4px 14px;
+    border:none;
+    border-radius: 8px;
+    color:#666666;
+}
+
+option{
+    padding:15px;
+    width:250px;
+    box-shadow:rgba(0,0,0, 0.1) 0px 4px 14px;
+    border:none;
+    border-radius: 8px;
+    color:#666666;
+    outline:none;
+}
+
+#courses{
+    align-self: center;
+    margin:50px auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:90%;
+    font-size: 20px;
+}
+
+.course{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom:25px;
+    margin-right:100px;
+}
+
+.course .col{
+    display:flex;
+    justify-content: space-between;
+    width:40%;
+    background-color: #ecddd03c;
+    padding:25px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0, 0.5);
+}
+
+input[type=radio]{
     display:none;
 }
 
-.option ul:hover li{
+a{
+    display:inline-block;
+    background-color: #35455D;
+    border-radius: 25px;
+    font-size: 13px;
+    padding:5px;
+    color:#FAF6F3;
+    text-decoration: none;
+}
+
+.courseDetails{
+    align-self: center;
+    margin:50px auto;
     display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:90%;
+    font-size: 15px;
+    background-color: #FAF6F3;
+    border: 2px solid rgba(0,0,0, 0.5);
+    border-radius: 5px;
+}
+
+.courseDetail{
+    display:flex;
+    width:100%;
+}
+
+.courseDetail .col, .tut{
+    text-align: center;
+    width:15%;
+    padding: 35px 25px;
+    border-radius: 15px;
+    margin:50px;
+    background-color: white;
+    box-shadow: 0px 6px 10px 5px rgba(0,0,0, 0.25);
+}
+
+.courseDetailsHeader{
+    text-align: center;
+    background-color: #35455D;
+    color:#FAF6F3;
+    width:100%;
+    font-size: 40px;
+}
+
+.courseDetails a{
+    align-self: center;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.container{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#tutorchoose{
+ width: 50%;
+}
+
+.tutors{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.tut{    
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: none;
+    width:100%;
+    margin:20px;
+}
+
+.tutors label{
+    align-self: flex-start;
+    width:80%;
+}
+
+.tut:hover{
+    cursor: pointer;
+}
+
+input[type=radio]:checked + label .tut{
+    border: 1px solid #35455D;
+}
+
+#datepicker{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+}
+
+.year-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:50%;
+}
+
+.month-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:70%
+}
+
+#datepicker span{
+    text-align: center;
+    width:80%;
+}
+
+#datepicker #year{
+    font-weight: bold;
+}
+
+.sched{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
